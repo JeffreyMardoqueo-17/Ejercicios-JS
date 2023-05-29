@@ -29,4 +29,14 @@ for (let i = 1; i <= numero; i++) {
 }
 return document.write(divisores);
 }
-Divisores(100);
+// Divisores(100); //descomentar para probar
+
+//----------------------------Ejericicio que genere numeros aeleatorios
+const matriz = [];
+let totaldNumero = parseInt(prompt("Escribe de cuanto quieres que sea la longitud de los numeros, es decir cuantos se guardaran en el arreglo"))
+// Generar 20 números aleatorios y guardarlos en la matriz
+for (let i = 0; i < totaldNumero; i++) {
+  const numeroAleatorio = Math.floor(Math.random() * 100); // Generar número aleatorio entre 0 y 99
+  matriz.push(numeroAleatorio); // Agregar número aleatorio a la matriz
+}
+// document.write(matriz); //descomentar para probar
